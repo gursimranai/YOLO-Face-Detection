@@ -1,0 +1,27 @@
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+detection_env/
+.venv/
+venv/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Local outputs
+runs/
+outputs/
+*.log
+
+# Local environment variables
+.env
+
+# Model weights - keep local until redistribution is checked
+*.pt
