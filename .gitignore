@@ -1,31 +1,57 @@
-# Python
+﻿# Python
 __pycache__/
 *.py[cod]
 *.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
+ENV/
+detection_env/
 
 # Jupyter
 .ipynb_checkpoints/
 
 # IDE
 .vscode/
+.idea/
+*.swp
+*.swo
 
-# Model weights
+# Ignore all files inside demo-videos, keep the folder
+assets/demo-videos/*
+!assets/demo-videos/.gitkeep
+
+
+# Model weights and exported models
 *.pt
+*.pth
 *.onnx
 *.engine
+*.torchscript
 
-# Environment variables
+# Training and experiment artifacts
+runs/
+wandb/
+mlruns/
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
 
-# Cache
-.pytest_cache/
-.mypy_cache/
-
-# OS files
+# Operating system
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Temporary files
+*.log
+*.tmp
+*.bak
